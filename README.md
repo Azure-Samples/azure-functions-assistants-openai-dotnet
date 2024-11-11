@@ -1,3 +1,4 @@
+<!--
 ---
 name: Azure Function using OpenAI trigger and bindings extension to highlight OpenAI function calling
 description: This repository contains an Azure Function using OpenAI trigger and bindings extension to highlight OpenAI function calling. The sample uses managed identity.
@@ -12,6 +13,7 @@ languages:
 - bicep
 - azdeveloper
 ---
+-->
 
 # Azure Functions
 ## Using OpenAI trigger and bindings extension to enable function calling
@@ -32,7 +34,13 @@ You can learn more about the OpenAI trigger and bindings extension in the [GitHu
 
 ### Create Azure OpenAI resource for local and cloud dev-test
 
+Run the following command to download the project code
+```bash
+azd init -t https://github.com/Azure-Samples/azure-functions-assistants-openai-dotnet
+```
+
 Once you have your Azure subscription, run the following in a new terminal window to create Azure OpenAI and other resources needed:
+
 ```bash
 azd provision
 ```
